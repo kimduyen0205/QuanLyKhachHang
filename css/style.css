@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.form,
+.table {
+  width: 600px;
+  border: 1px solid #000;
+  margin: 25px;
+  padding: 10px;
+}
+.table {
+  width: 610px;
+}
+h3 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form label {
+  width: 150px;
+  float: left;
+  /* background-color: yellow; */
+}
+.form input[type="text"] {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 4px;
+  /* background-color: violet; */
+}
+.form button {
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.text {
+  color: red;
+  font-weight: bold;
+}

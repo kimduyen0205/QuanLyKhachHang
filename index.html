@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="DisplayListCustomer()">
+    <div class="form">
+      <h3>Thông tin khách hàng</h3>
+      <label>Họ và tên</label>
+      <input type="text" id="fullname" />
+      <span id="fullname-error" class="text"></span>
+      <br />
+      <label>Địa chỉ email</label>
+      <input type="text" id="email" />
+      <span id="email-error" class="text"></span>
+      <br />
+      <label>Số điện thoại</label>
+      <input type="text" id="phone" />
+      <span id="phone-error" class="text"></span>
+      <br />
+      <label>Địa chỉ</label>
+      <input type="text" id="address" />
+      <span id="address-error" class="text"></span>
+      <br />
+      <label>Giới tính</label>
+      <input type="radio" name="gender" id="male" value="1" />Nam
+      <input type="radio" name="gender" id="female" value="2" />Nữ
+      <span id="gender-error" class="text"></span>
+      <br />
+      <button onclick="save()">Thêm mới</button>
+      <button onclick="update()">Cập nhật</button>
+    </div>
+    <div class="table" id="table">
+      <h3>Danh sách khách hàng</h3>
+      <input type="text" id="myInput" placeholder="Tìm kiếm theo họ tên..." />
+      <button onclick="SearchInfo()">Tìm</button>
+      <br />
+      <br />
+      <table id="list-customer" width="600" border="1"></table>
+    </div>
+    <div id="detail-customer"></div>
+    <h1>Kết quả tìm kiếm khách hàng</h1>
+    <div id="search-customer"></div>
+    <script src="./js/validate-form.js"></script>
+    <script src="https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)"></script>
+  </body>
+</html>
